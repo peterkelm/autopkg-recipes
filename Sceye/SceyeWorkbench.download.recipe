@@ -21,7 +21,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>re_pattern</key>
-				<!-- pattern for "old" 32 bit versions (e.g. https://www.sceye.eu/downloads/SceyeWorkbench_1_9_7.dmg) was:
+				<!-- pattern for "old" 1.x 32 bit versions (e.g. https://www.sceye.eu/downloads/SceyeWorkbench_1_9_7.dmg) was:
 				<string>((?P&lt;url&gt;https://www.sceye.eu/downloads/SceyeWorkbench_(?P&lt;major&gt;\d+)_(?P&lt;minor&gt;\d+)_(?P&lt;patch&gt;\d+).dmg))</string -->
 				<string>((?P&lt;url&gt;https://www.sceye.eu/downloads/SceyeWorkbench64-(?P&lt;version&gt;[\d+\.]+).dmg))</string>
 				<key>result_output_var_name</key>
@@ -36,6 +36,8 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
+				<!-- version 1.x -->
+				<!-- string>%NAME%-%major%.%minor%.%patch%.dmg</string -->
 				<string>%NAME%-%version%.dmg</string>
 			</dict>
 			<key>Processor</key>

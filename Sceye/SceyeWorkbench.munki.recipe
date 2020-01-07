@@ -30,8 +30,8 @@
 			<string>Sceye Workbench</string>
 			<key>name</key>
 			<string>%NAME%</string>
-			<!-- key>minimum_os_version</key>
-			<string>10.10</string -->
+			<key>minimum_os_version</key>
+			<string>10.15</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
@@ -42,17 +42,17 @@
 	<string>com.github.peterkelm.download.SceyeWorkbench</string>
 	<key>Process</key>
 	<array>
-        <dict>
+        <!-- dict>
 			<key>Processor</key>
 			<string>Versioner</string>
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>/Applications/SceyeWorkbench.app/Contents/Info.plist</string>
+				<string>/Applications/SceyeWorkbench64.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>LSMinimumSystemVersion</string>
 			</dict>
-		</dict>
+		</dict -->
 		<dict>
     		<key>Processor</key>
     		<string>MunkiPkginfoMerger</string>
@@ -62,10 +62,10 @@
 				<dict>
 					<key>blocking_applications</key>
 					<array>
-						<string>SceyeWorkbench</string>
+						<string>SceyeWorkbench64</string>
 					</array>
-                    <key>minimum_os_version</key>
-					<string>%version%</string>
+                    <!-- key>minimum_os_version</key>
+					<string>%version%</string -->
 				</dict>	
 			</dict>
 		</dict>
